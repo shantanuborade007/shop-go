@@ -2,7 +2,9 @@ pre-commit:
   parallel: true
   commands:
     build:
+      glob: "*.go"
       run: go build ./...
     vet:
+      glob: "*.go"
       run: go vet ./...
 
